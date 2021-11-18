@@ -5,4 +5,4 @@ ENV TZ "America/Sao_Paulo"
 RUN echo "System.out.println(java.util.Calendar.getInstance().getTimeZone().getID());" >> timezone.jsh
 RUN echo "/exit" >> timezone.jsh
 
-RUN jshell timezone.jsh
+CMD ["jshell", "timezone.jsh"]
